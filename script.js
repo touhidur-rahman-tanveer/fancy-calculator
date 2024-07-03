@@ -11,7 +11,7 @@ let counterVAlueEl = document.querySelector('.counter__value')
 
 let counterTitleEl = document.querySelector('.counter__title')
 
-let incrementCounter = function(){
+let incrementCounter = () =>{
 
     //  Select the recent value
     const recentValue = counterVAlueEl.textContent;
@@ -51,7 +51,7 @@ let incrementCounter = function(){
 
 incrementButtonEl.addEventListener('click', incrementCounter );
 
-decreaseButtonEl.addEventListener('click', function(){
+decreaseButtonEl.addEventListener('click', () => {
 
     //  Select the recent value
     const recentValue = counterVAlueEl.textContent;
@@ -83,7 +83,7 @@ decreaseButtonEl.addEventListener('click', function(){
     })
 
 
-    resetButtonEl.addEventListener('click',function(){
+    resetButtonEl.addEventListener('click',() => {
         
         let resetValue = counterVAlueEl.textContent = 0;
 
